@@ -9,6 +9,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 120%;
+  background-image: linear-gradient(white, #f0f1ff);
 }
 
 .custom-button {
@@ -60,7 +61,7 @@ main .main-top .main-top-text .middle-button {
   font-weight: 700;
 }
 main .main-top .mobile-img {
-  width: 335px;
+  width: 100vw;
 }
 main .card-container {
   display: grid;
@@ -85,7 +86,16 @@ main .card-container .title-card h2 {
   line-height: 120%;
 }
 main .card {
-  background-color: tomato;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+}
+main .card .icon {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 32px;
+  top: -28px;
 }
 
 .tablet-img {
