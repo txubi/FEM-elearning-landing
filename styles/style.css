@@ -62,6 +62,31 @@ main .main-top .main-top-text .middle-button {
 main .main-top .mobile-img {
   width: 335px;
 }
+main .card-container {
+  display: grid;
+  grid-template-rows: 122px repeat(5, 1fr);
+  height: 2018px;
+  padding: 80px 20px;
+  padding-top: 0;
+  row-gap: 64px;
+}
+main .card-container .card {
+  width: 335px;
+}
+main .card-container .title-card {
+  background-image: linear-gradient(#f02aa6, #ff6f48);
+  border-radius: 15px;
+  color: #ffffff;
+  display: flex;
+  padding: 32px;
+  align-items: center;
+}
+main .card-container .title-card h2 {
+  line-height: 120%;
+}
+main .card {
+  background-color: tomato;
+}
 
 .tablet-img {
   display: none;

@@ -72,6 +72,31 @@ main {
       width: 335px;
     }
   }
+  .card-container {
+    display: grid;
+    grid-template-rows: 122px repeat(5, 1fr);
+    height: 2018px;
+    padding: 80px 20px;
+    padding-top: 0;
+    row-gap: 64px;
+    .card {
+      width: 335px;
+    }
+    .title-card {
+      background-image: $gradient-pink;
+      border-radius: 15px;
+      color: $white;
+      display: flex;
+      padding: 32px;
+      align-items: center;
+      h2 {
+        line-height: 120%;
+      }
+    }
+  }
+  .card {
+    background-color: tomato;
+  }
 }
 .tablet-img {
   display: none;
