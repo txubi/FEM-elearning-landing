@@ -61,7 +61,7 @@ main .main-top .main-top-text .middle-button {
   font-weight: 700;
 }
 main .main-top .mobile-img {
-  width: 100vw;
+  width: 335px;
 }
 main .card-container {
   display: grid;
@@ -96,6 +96,50 @@ main .card .icon {
   position: absolute;
   left: 32px;
   top: -28px;
+}
+main .card .card-content {
+  width: 271px;
+  height: 196px;
+  padding: 40px 30px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .card .card-content h3 {
+  font-size: 20px;
+}
+main .card .card-content p {
+  font-size: 16px;
+  color: #83869a;
+  font-weight: 600;
+}
+main .card .card-content a {
+  text-decoration: none;
+  color: #f74780;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #13183f;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 335px;
+  height: 48px;
+}
+footer .footer-content img {
+  height: 20px;
+}
+footer .footer-content .footer-button {
+  background-image: linear-gradient(#4851ff, #f02aa6);
+  width: 152px;
+  height: 48px;
 }
 
 .tablet-img {
