@@ -1,3 +1,36 @@
+$blue900: #13183f;
+$blue600: #666ca3;
+$pink600: #f74780;
+$pink300: #ffa7c3;
+$grey: #83869a;
+$white: #ffffff;
+$gradient-pink: linear-gardient(#f02aa6, #ff6f48);
+$gradient-purple: linear-gradient(#4851ff, #f02aa6);
+
+%text-preset1234 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 120%;
+  line-height: 0px;
+  font-weight: 900;
+}
+%text-preset5 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 120%;
+  line-height: 0px;
+  font-weight: 200;
+}
+%text-preseet67 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 120%;
+  line-height: 0px;
+  font-weight: 500;
+}
 * {
   box-sizing: border-box;
 }
