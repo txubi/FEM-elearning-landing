@@ -36,6 +36,9 @@ body {
 
   cursor: pointer; /* Changes cursor to a hand tool */
 }
+.custom-button:focus-visible {
+  border: 3px blue solid;
+}
 header {
   width: 100%;
   height: 91px;
@@ -82,7 +85,7 @@ main {
   .card-container {
     display: grid;
     justify-content: center;
-    grid-template-rows: 122px repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
     height: 2018px;
     padding: 80px 20px;
     padding-top: 0;
@@ -154,6 +157,8 @@ footer {
     }
     .footer-button {
       background-image: $gradient-purple;
+      color: white;
+      font-weight: 700;
       width: 152px;
       height: 48px;
     }
