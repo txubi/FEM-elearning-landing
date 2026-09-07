@@ -20,6 +20,7 @@ body {
   font-style: normal;
   line-height: 120%;
   background-image: $gradient-background;
+  overflow-x: hidden;
 }
 .custom-button {
   /* 1. Reset default browser styles */
@@ -52,6 +53,10 @@ header {
 main {
   .main-top {
     padding: 64px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .main-top-text {
       h1 {
         font-size: 40px;
@@ -76,6 +81,7 @@ main {
   }
   .card-container {
     display: grid;
+    justify-content: center;
     grid-template-rows: 122px repeat(5, 1fr);
     height: 2018px;
     padding: 80px 20px;
@@ -140,7 +146,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 335px;
+    width: 100%;
+    padding: 0 80px;
     height: 48px;
     img {
       height: 20px;
@@ -157,4 +164,93 @@ footer {
 }
 .desktop-img {
   display: none;
+}
+@media (min-width: 768px) {
+  .custom-button {
+    width: 162px;
+    height: 48px;
+  }
+  header {
+    img {
+      height: 20px;
+    }
+    button {
+      z-index: 5;
+    }
+    justify-content: space-between;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .main-top {
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      .main-top-text {
+        width: 326px;
+      }
+      .tablet-img {
+        position: absolute;
+        display: inline-block;
+        //transform: translateX(180px);
+        right: -200px;
+        top: -215px;
+      }
+      .mobile-img {
+        display: none;
+      }
+      .desktop-img {
+        display: none;
+      }
+    }
+    .card-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      height: 1114px;
+      width: 680px;
+      gap: 32px;
+      margin: 144px 0;
+    }
+    .card {
+      width: 322px;
+      height: 328px;
+    }
+  }
+}
+@media (min-width: 1150px) {
+  main {
+    .main-top {
+      position: relative;
+      .main-top-text {
+        width: 544px;
+        height: 339px;
+        padding-left: 80px;
+      }
+      .tablet-img {
+        display: none;
+      }
+      .desktop-img {
+        display: inline-block;
+        right: -200px;
+        width: 700px;
+        top: -160px;
+        position: absolute;
+      }
+      .mobile-img {
+        display: none;
+      }
+    }
+    .card-container {
+      margin: 64px 80px 144px 80px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .card {
+      width: 352px;
+      height: 322px;
+    }
+  }
 }
