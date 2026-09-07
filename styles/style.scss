@@ -13,6 +13,9 @@ $gradient-background: linear-gradient(white, #f0f1ff);
 * {
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   width: 100%;
   font-family: "Plus Jakarta Sans", sans-serif;
