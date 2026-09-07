@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: live site](https://txubi.github.io/FEM-elearning-landing/)
+- Live Site URL: [live site](https://txubi.github.io/FEM-elearning-landing/)
 
 ## My process
 
